@@ -14,5 +14,3 @@
                   (for [a (range -999 1000) b (range -999 1000)]
                     [(count (take-while is-prime? 
                                         (map #(quad-form a b %) (iterate inc 0)))) (* a b)]))))
-
-;; [71 -59231]
