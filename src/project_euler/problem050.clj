@@ -10,7 +10,8 @@
        (iterate (fn [[sum s]] [(+ sum (first s)) (rest s)])
                 [0 primes])))
 
-(defn euler-50 []
+;; Elapsed time: 13.652365 msecs
+(defn euler-050 []
   (loop [c 1]
     (let [sums (reverse (take c prime-sums))
           subs (take c (reverse (take-while #(> 1000000 (- % (last sums)))
