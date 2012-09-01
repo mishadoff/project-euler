@@ -9,9 +9,9 @@
 
 (defn get-mods [len]
   (let [i (int (/ len 2))]
-    (take 4 (drop (* 4 (dec i)) mods))))
+    (map + [2 4 6 8] (map #(* 8 (dec i) %) [1 1 1 1])))) 
 
-;; Elapsed time: 58706.892825 msecs
+;; Elapsed time: 11654.382655 msecs
 (defn euler-058 []
   (loop [nums [3 5 7 9] len 3 pr 3 tot 5]
     (if (< (/ pr tot) 0.1) len
