@@ -3,9 +3,6 @@
 (defn anagram-default [n1]
   (apply str (sort (str n1))))
 
-(defn anagram-number? [n1 n2]
-  (= (anagram-default n1) (anagram-default n2)))
-
 (def cubes (map #(* % % %) (iterate inc 1)))
 
 ;; Elapsed time: 86.66619 msecs
