@@ -13,7 +13,11 @@
 (defn phi [n]
   (reduce * n (map #(- 1 (/ 1 %)) (factorize n))))
 
-(defn euler-069 []
+;; slow one
+(defn euler-069-slow []
   (apply max-key second
-         (for [i (range 1 100000)]
+         (for [i (range 1 10000)]
            [i (double (/ i (phi i)))])))
+
+(defn euler-069 []
+  (last (take-while #(< % 1000000) (reductions * lazy/primes))))
