@@ -1,12 +1,17 @@
 (ns project-euler)
   
 (defn num-of-digits [n]
-  (count (seq (str n))))
+  (count (str n)))
 
-(defn fibs-long []
-  (map first (iterate (fn [[a b]] [b (+' a b)]) [0 1])))
+(defn fibonacci []
+  (->> [0 1]
+       (iterate (fn [[a b]] [b (+' a b)]))
+       (map first)))
 
-;; Elapsed time: 1089.690584 msecs
+;; Elapsed time: 834.545293 msecs
 (defn euler-025 []
-  (first (first (drop-while #(< (num-of-digits (last %)) 1000)
-                            (map #(vec [%2 %1]) (fibs-long) (iterate inc' 0))))))
+  (->> (fibonacci)
+       (map-indexed (fn [i n] [i (num-of-digits n)]))
+       (drop-while #(< (second %) 1000))
+       (first)
+       (first)))
