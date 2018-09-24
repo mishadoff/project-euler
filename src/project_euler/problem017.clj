@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem017)
 
 (def first20 ["one" "two" "three" "four" "five"
               "six" "seven" "eight" "nine" "ten"

@@ -1,4 +1,4 @@
-(ns project-euler
+(ns project-euler.problem002
   (:use [clojure.contrib.lazy-seqs :only (fibs)]))
 
 ;; Elapsed time: 1.250295 msecs

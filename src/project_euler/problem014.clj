@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem014)
 
 (defn collatz-next [n]
   (if (even? n) (/ n 2) (inc (* n 3))))

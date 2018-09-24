@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem006)
 
 (defn sqr [n] (* n n))
 

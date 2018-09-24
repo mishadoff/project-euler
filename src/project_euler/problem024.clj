@@ -1,4 +1,4 @@
-(ns project-euler
+(ns project-euler.problem024
   (:require [clojure.math.combinatorics :as comb]))
 
 ;; Elapsed time: 2848.733561 msecs

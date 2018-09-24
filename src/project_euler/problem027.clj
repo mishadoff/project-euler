@@ -1,5 +1,5 @@
-(ns project-euler
-  (:use [clojure.contrib.lazy-seqs :only (primes)]))
+(ns project-euler.problem027
+  (:require [clojure.contrib.lazy-seqs :refer [primes]]))
 
 (defn quad-form [a b n]
   (+ (* n n) (* a n) b))

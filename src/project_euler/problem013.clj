@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem013)
 
 ;; Elapsed time: 24.427424 msecs
 (defn euler-013 []

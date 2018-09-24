@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem016)
 
 (defn powers-of-2 []
   (iterate (partial *' 2) 1))

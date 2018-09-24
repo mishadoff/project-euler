@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem023)
 
 (defn sum-of-proper-divisors [n]
   (let [divs (filter #(zero? (mod n %)) (range 2 (Math/sqrt n)))]

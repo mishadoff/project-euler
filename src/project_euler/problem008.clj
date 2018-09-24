@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem008)
 
 (defn calc-product [lst]
   (reduce * (map #(- (int %) 48) lst)))

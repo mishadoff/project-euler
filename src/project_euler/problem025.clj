@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem025)
   
 (defn num-of-digits [n]
   (count (str n)))

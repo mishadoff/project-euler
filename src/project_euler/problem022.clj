@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem022)
 
 (defn score [string]
   (reduce + (map #(- (int %) 64) string)))

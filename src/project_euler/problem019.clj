@@ -1,4 +1,4 @@
-(ns project-euler
+(ns project-euler.problem019
   (import [java.util GregorianCalendar]))
 
 (defn calendar-for [year month]

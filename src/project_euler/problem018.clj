@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem018)
 
 (def triangle
   (map #(Integer/parseInt %)(map #(reduce str %) (partition 2 2 (remove #(or (= \newline %) (= \ %))

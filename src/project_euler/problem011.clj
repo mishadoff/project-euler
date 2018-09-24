@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem011)
 
 (defn get-matrix []
   (map #(Integer/parseInt (apply str %))

@@ -1,4 +1,4 @@
-(ns project-euler
+(ns project-euler.problem010
   (:use [clojure.contrib.lazy-seqs :only (primes)]))
 
 ;; Elapsed time: 12975.457287 msecs

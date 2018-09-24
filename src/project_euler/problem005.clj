@@ -1,4 +1,4 @@
-(ns project-euler
+(ns project-euler.problem005
   (:use [clojure.contrib.math :only (lcm)]))
 
 ;; Elapsed time: 0.210153 msecs

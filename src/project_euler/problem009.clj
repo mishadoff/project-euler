@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem009)
 
 (defn is-triplet? [a b c]
   (= (+ (* a a) (* b b)) (* c c)))

@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem004)
 
 (defn palindrome? [s]
   (= s (reverse s)))

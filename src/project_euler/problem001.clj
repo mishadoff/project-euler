@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem001)
 
 (defn sum-of [n]
   (reduce + (range n 1000 n)))

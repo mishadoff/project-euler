@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem020)
 
 (defn sum-of-digits [n]
   (reduce + (map #(- (int %) 48) (seq (str n)))))

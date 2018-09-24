@@ -1,4 +1,4 @@
-(ns project-euler)
+(ns project-euler.problem015)
 
 (defn routes-extend [lst]
   (let [size (count lst)]
